@@ -74,10 +74,10 @@ public class BrowserStackTestNGTest {
             l.start(options);
         }
         
-        System.getProperties().put("http.proxyHost", "172.18.100.15");
-        System.getProperties().put("http.proxyPort", "18717");
-        System.getProperties().put("https.proxyHost", "172.18.100.15");
-        System.getProperties().put("https.proxyPort", "18717");
+//         System.getProperties().put("http.proxyHost", "172.18.100.15");
+//         System.getProperties().put("http.proxyPort", "18717");
+//         System.getProperties().put("https.proxyHost", "172.18.100.15");
+//         System.getProperties().put("https.proxyPort", "18717");
 
         driver = new RemoteWebDriver(new URL("http://"+username+":"+accessKey+"@"+config.get("server")+"/wd/hub"), capabilities);
     }
